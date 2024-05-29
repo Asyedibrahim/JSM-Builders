@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=DM+Serif+Display&family=Poppins:wght@200&family=Raleway&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Cinzel', serif;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+/* Custom ScrollBar */
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#343a40);
+    border-radius: 3.2rem;
+}
+body{
+    overflow-x: hidden !important;
+}
+/* data-aos extra space remove */
+/* .delete_extra_space{
+    overflow-x: hidden;
+} */
+
+/* Up arrow */
+.fa-regular{
+    position: fixed;
+    bottom: 8%;
+    right: 4%;
+    z-index: 10;
+}
+/* Navbar Starts */
+nav{
+    background-color: #575656;
+}
+.info-cont{
+    position: fixed;
+    top: 11%;
+    right: 4%;
+    z-index: 999;
+    
+}
+.nav-link{
+    color: #fff !important;
+}
+.carousel-indicators li{
+    width: 14px !important;
+    height: 14px !important;
+    border-radius: 50%;
+    background-color: #343a40!important;
+}
+@media screen and (max-width:375px) {
+    .carousel-indicators li{
+        display: none !important;
+    }
+}
+.carousel-indicators .active {
+    background-color: white !important;
+}
+.nav-item a{
+    font-weight: 500;
+    font-size: 20px;
+    border-bottom: thin solid transparent;
+
+}
+.nav-item a:hover{
+    border-bottom: thin solid white;
+}
+.modal.left .modal-dialog{
+    position: fixed;
+    right: 0;
+    margin: auto;
+    width: 350px;
+}
+.modal-title{
+    margin-left: 28%;
+}
+.btn:focus{
+    box-shadow: none;
+}
+/* Navbar Ends */
+
+/* Home Starts */
+.carousel-item img{
+    position: relative;
+    transform: scaleX(-1);
+}
+.welcome{
+    position: absolute;
+    top:30%;
+    left: 10%;
+    color: black !important;
+    width: 50%;
+}
+.welcome h1{
+    font-weight:900 ;
+}
+.welcome a{
+    border: 2px solid #575656;
+    color: black;
+    font-weight: 500;
+    transition: 0.5s all;
+    padding: 10px 30px 10px 30px;
+    border-radius: 3.2rem;
+}
+.welcome a:hover{
+    background-color: #575656;
+    color: white;
+    text-decoration: none;
+}
+@media screen and (max-width:927px) {
+    .welcome{
+        position: absolute;
+        top:30%;
+        left: 23%;
+        color: black !important;
+        width: 60%;
+    }
+}
+/* Home Ends */
+
+/* About Us Starts */
+#a1 h2{
+    font-weight: 900;
+}
+.title h2{
+    font-weight: 900;
+    padding-left: 10px;
+    border-left: thick solid #575656;
+}
+#line{
+    margin-top: 20px;
+    border-bottom: thin solid #575656;
+}
+
+/* About Us Ends */
+
+/* Number Starts */
+.counter{
+    font-size: 3em;
+    font-weight: 900;
+}
+#count{
+    color: #000;
+    text-align: center;
+    background-color: lightgray;
+    padding: 20px;
+}
+#ccount{
+    transition: all 0.5s;
+}
+#ccount:hover{
+    box-shadow: 7px 7px 19px #575656, -7px -7px 19px #bcbcbc;
+}
+@media screen and (max-width:751px) {
+    #ccount:hover{
+        transform: scale(1);
+        box-shadow: 7px 7px 19px #575656, -7px -7px 19px #bcbcbc;
+    }
+}
+/* Number Ends */
+
+/* Services Starts */
+#services{
+    background-color: lightgray;
+}
+#card{
+    text-align: center;
+    transition: all 0.6s;
+}
+#card:hover{
+    transform: scale(1.1);
+    box-shadow: 7px 7px 19px #575656, -7px -7px 19px #bcbcbc;
+}
+@media screen and (max-width:751px) {
+    #card:hover{
+        transform: scale(1);
+        box-shadow: 7px 7px 19px #575656, -7px -7px 19px #bcbcbc;
+    }
+}
+.card-title{
+    font-weight: 900;
+}
+
+/* Services Ends */
+
+/* Projects Starts */
+.project1{
+    background-color: #575656;
+}
+.title1 h2{
+    font-weight: 900;
+    padding-left: 10px;
+    border-left: thick solid lightgray;
+    color: #fff;
+}
+#pro1 img{
+    overflow: hidden;
+}
+#pro1 .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    background: linear-gradient(rgba(221, 0, 0, 0.445),transparent);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: all 1s;
+}
+#pro1:hover .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(rgba(255, 0, 0, 0.658),transparent);
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+}
+#view a{
+    border: 2px solid #fff;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s all;
+    padding: 10px 30px 10px 30px;
+    border-radius: 3.2rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+#view span{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    top: 0;
+    left:0;
+    background-color: #fff;
+    width: 0;
+    border-radius: 3.2rem;
+    transition: all 1s;
+    opacity: 0;
+}
+#view a:hover span{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    top: 0;
+    left:0;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 3.2rem;
+    opacity: 1;
+}
+#view a:hover{
+    color: #000;
+    text-decoration: none;
+}
+/* Projects Ends */
+
+/* Contact Us Starts */
+#contact{
+    background-color: #bcbcbc;
+}
+.form-label{
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-info{
+    background-color: #343a40;
+    color: #fff;
+    padding: 40px;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color:#575656 !important;
+    outline: 0;
+    box-shadow: 7px 7px 19px #575656, -7px -7px 19px #bcbcbc !important;
+}
+/* Contact Us Ends */
+footer{
+    background-color: #575656;
+}
+.foot{
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+.aa1:hover{
+    text-decoration: none;
+}
